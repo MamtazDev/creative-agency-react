@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --primaryColor: #5D51F2;
+  --secondaryColor: #FFDC40;
+  --neutralColor: #393939;
+  --initialColor: #FFF;
+  --textColor: #6A6A6A;
+  --otherColor: #C9C9C9;
+  --buttonColor: #1A1A1A;
+  --hoverColor: #dddafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+.container {
+  max-width: 1420px;
+}
+
+header,
+footer {
+  background: var(--primaryColor);
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+input {
+  background: transparent;
+  border: none;
+}

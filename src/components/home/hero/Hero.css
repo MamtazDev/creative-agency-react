@@ -1,0 +1,183 @@
+/* Hero Start */
+.heroBg {
+    background-image: url("../../../assets/home1/bannerBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 880px;
+    padding-top: 60px;
+}
+
+.banner {
+    margin-top: -40%;
+    position: relative;
+}
+
+h1 {
+    /* color: var(--initialColor); */
+    font-family: 'ClashDisplay-Semibold';
+    font-size: 68px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+h1 span {
+    color: var(--secondaryColor);
+    position: relative;
+    display: inline-block;
+}
+
+h1 span::before {
+    content: "";
+    position: absolute;
+    width: 86%;
+    height: 7px;
+    background-color: var(--secondaryColor);
+    bottom: 18%;
+    left: 3px;
+}
+
+h1 span img {
+    position: absolute;
+}
+
+.heroBg p {
+    color: var(--initialColor);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/* Circle Animation Start */
+
+.circlePosition {
+    position: absolute;
+    right: 10%;
+    top: -6%;
+    max-width: 144px;
+    max-height: 144px;
+}
+
+.circleTxt {
+    position: relative;
+    background: var(--secondaryColor);
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 9999;
+    animation: rotating 12s linear infinite;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: url('/images/rightdirection.png');
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.bounnceArrow {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce 1s infinite;
+    z-index: 99999;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-40%, -40%);
+    }
+}
+
+/* Circle Animation End */
+
+/* Hero Responsive Start */
+
+@media only screen and (max-width:1024px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .heroBg {
+        height: 710px;
+    }
+
+    .banner {
+        margin-top: -40%;
+    }
+
+    .circlePosition {
+        top: -9%;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .heroBg {
+        height: 690px;
+    }
+
+    .banner {
+        margin-top: -43%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .heroBg {
+        height: 630px;
+        padding-top: 20px;
+    }
+
+    h1 span img {
+        height: 21px;
+        width: 21px;
+    }
+
+    h1 span::before {
+        height: 5px;
+        bottom: 13%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    h1 {
+        font-size: 29px;
+    }
+
+    .heroBg p {
+        font-size: 16px;
+    }
+
+    .heroBg {
+        height: 420px;
+    }
+
+    .banner {
+        margin-top: -42%;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .heroBg {
+        height: 375px;
+    }
+
+    .circlePosition {
+        top: -20% !important;
+    }
+}
+
+/* Hero Responsive End */
+/* Hero End */
