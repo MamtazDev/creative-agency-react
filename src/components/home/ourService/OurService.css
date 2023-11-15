@@ -1,0 +1,126 @@
+/* Our Service Start */
+.customGap {
+    gap: 27px;
+}
+
+.allService {
+    color: var(--textColor);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 21px 24px;
+    border: 1px solid #C9C9C9;
+    border-radius: 21px;
+    transition: 0.6s ease-in-out;
+}
+
+.allService span {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--neutralColor);
+    display: inline-block;
+    transition: 0.6s ease-in-out;
+}
+
+.allService:hover {
+    background: var(--primaryColor);
+    color: var(--initialColor);
+    font-weight: 600;
+}
+
+.allService:hover span {
+    color: var(--secondaryColor);
+}
+
+.allService span svg path {
+    transition: 0.9s ease-in-out;
+}
+
+.allService:hover span svg path {
+    stroke: var(--secondaryColor);
+}
+
+.serviceImg,
+.serviceImg img {
+    border-radius: 21px;
+}
+
+.serviceBg {
+    border-radius: 24px;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 32px;
+}
+
+.howWorkBg {
+    background: url('../../../assets/home1/bestServiceBg1.png');
+}
+
+.meetExpertBg {
+    background: url('../../../assets/home1/meetExpertBg.png');
+}
+
+.howWorkBg>p {
+    margin-bottom: 68px;
+}
+
+.serviceTxt {
+    color: var(--initialColor);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.arrowPosition {
+    position: relative;
+    z-index: 1;
+}
+
+.goArrow {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    animation: bounce2 1s infinite;
+    z-index: 99999;
+}
+
+@keyframes bounce2 {
+
+    0%,
+    100% {
+        transform: translateY(-50%);
+    }
+
+    50% {
+        transform: translateY(-40%);
+    }
+}
+
+/* Our Service Responsive Start*/
+
+@media only screen and (max-width:1024px) {
+
+
+    .allService span,
+    .allService:hover span {
+        font-size: 28px;
+    }
+
+    .allService,
+    .allService:hover {
+        font-size: 18px;
+        padding: 11px 14px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .customGap {
+        gap: 18px;
+    }
+}
+
+/* Our Service Responsive End */
+
+/* Our Service End */

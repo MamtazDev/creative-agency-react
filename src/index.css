@@ -7,8 +7,10 @@
   --initialColor: #FFF;
   --textColor: #6A6A6A;
   --otherColor: #C9C9C9;
+  --otherColor2: #F7F6FF;
+  --OtherColor4: rgba(238, 238, 238, 0.93);
   --buttonColor: #1A1A1A;
-  --hoverColor: #dddafa;
+  --boxShadowColor: rgba(20, 20, 43, 0.08);
 }
 
 * {
@@ -43,15 +45,11 @@ ul li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 :focus-visible {
   outline: none;
-}
-
-.container {
-  max-width: 1420px;
 }
 
 header,
@@ -68,3 +66,372 @@ input {
   background: transparent;
   border: none;
 }
+
+/* header */
+
+/* margin */
+.mb_56 {
+  margin-bottom: 56px;
+}
+
+.mb_15 {
+  margin-bottom: 15px;
+}
+
+.mb_18 {
+  margin-bottom: 18px;
+}
+
+.mb_54 {
+  margin-bottom: 54px !important;
+}
+
+.mt_32 {
+  margin-top: 32px;
+}
+
+.mb_32 {
+  margin-bottom: 32px;
+}
+
+.mt_30 {
+  margin-top: 30px;
+}
+
+.mb_37 {
+  margin-bottom: 37px;
+}
+
+.mt_37 {
+  margin-top: 37px;
+}
+
+.mt_150 {
+  margin-top: 150px;
+
+}
+
+.mb_150 {
+  margin-bottom: 150px;
+
+}
+
+.pt_150 {
+  padding-top: 150px;
+
+}
+
+.pb_150 {
+  padding-bottom: 150px;
+
+}
+
+.mb_70 {
+  margin-bottom: 70px;
+
+}
+
+.mb_100 {
+  margin-bottom: 100px;
+}
+
+.mb_56 {
+  margin-bottom: 56px;
+}
+
+.mt_56 {
+  margin-top: 56px;
+}
+
+.mb_48 {
+  margin-bottom: 48px;
+}
+
+.mb_40 {
+  margin-bottom: 40px;
+}
+
+.mt_48 {
+  margin-top: 48px;
+}
+
+.mt_30 {
+  margin-top: 30px;
+}
+
+/* margion end */
+
+/* font size  */
+.fs_16 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%
+}
+
+.fs_18 {
+  font-size: 18px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.fs_20 {
+  font-family: ' Work Sans' sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 150%
+}
+
+.fs_24 {
+  font-size: 24px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.fs_36 {
+  font-family: ' Work Sans' sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.fs_48 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.fs_32 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.fs_28 {
+  font-size: 28px;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.fw_400 {
+  font-weight: 400 !important;
+}
+
+.fw_500 {
+  font-weight: 500 !important;
+}
+
+.fw_600 {
+  font-weight: 600 !important;
+}
+
+.fw_700 {
+  font-weight: 700 !important;
+}
+
+.fw_800 {
+  font-weight: 800 !important;
+}
+
+/* color */
+.white {
+  color: var(--initialColor);
+}
+
+.white2 {
+  color: var(--otherColor2) !important
+}
+
+.black {
+  color: var(--neutralColor);
+}
+
+.grey {
+  color: var(--textColor);
+}
+
+.title {
+  color: var(--buttonColor);
+}
+
+.para {
+  color: var(--textColor);
+}
+
+.blue {
+  color: var(--primaryColor);
+}
+
+.yellow {
+  color: var(--secondaryColor);
+}
+
+.font_family_cash {
+  font-family: 'Clash Display';
+}
+
+.form-check-input:checked {
+  background-color: var(--primaryColor) !important;
+  border-color: var(--primaryColor) !important;
+}
+
+.breadcrumb_title {
+  font-size: 48px !important;
+  font-weight: 600;
+  margin-bottom: 40px !important;
+}
+
+.breadcrumb a {
+  font-size: 32px;
+}
+
+label {
+  color: var(--textColor);
+  font-family: Work Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+
+input {
+  border-radius: 11px;
+  border: 1px solid var(--primaryColor);
+  background: var(--otherColor2);
+}
+
+button {
+  border: none;
+}
+
+.all_mb {
+  margin-bottom: 140px;
+}
+
+@media only screen and (max-width:768px) {
+  .all_mb {
+    margin-bottom: 70px;
+  }
+}
+
+.inner_mb {
+  margin-bottom: 45px;
+}
+
+@media only screen and (max-width:768px) {
+  .inner_mb {
+    margin-bottom: 25px;
+  }
+}
+
+.txtOpacity {
+  opacity: 0.9;
+}
+
+.initialColor {
+  color: var(--initialColor) !important;
+}
+
+/* Design Text and SectionHeader Class Start */
+.sectionHeader {
+  color: var(--neutralColor);
+  font-family: 'Clash Display';
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+@media only screen and (max-width:768px) {
+  .sectionHeader {
+    font-size: 24px;
+  }
+}
+
+
+.headerHilight {
+  color: var(--primaryColor) !important;
+}
+
+.headerHilightSec {
+  color: var(--secondaryColor) !important;
+}
+
+.darkFont {
+  color: var(--buttonColor);
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@media only screen and (max-width:768px) {
+  .darkFont {
+    font-size: 16px;
+  }
+}
+
+.txt_curve {
+  position: relative;
+  color: var(--primaryColor);
+}
+
+.txt_curve::after {
+  position: absolute;
+  content: "";
+  bottom: -24px;
+  left: -8px;
+  height: 57%;
+  width: 110%;
+  border: 5px;
+  border-style: solid;
+  border-color: var(--secondaryColor) transparent transparent transparent;
+  border-radius: 45% 45% 0 0;
+}
+
+@media only screen and (max-width:768px) {
+  .txt_curve::after {
+    height: 70%;
+    position: absolute;
+    content: "";
+    bottom: -17px;
+    left: -8px;
+    width: 110%;
+    border: 3px;
+    border-style: solid;
+    border-color: var(--secondaryColor) transparent transparent transparent;
+    border-radius: 45% 45% 0 0;
+  }
+}
+
+/* Design Text and SectionHeader Class End */
+
+
+/* Card Inner desCription  Start*/
+.cardPara {
+  color: var(--textColor);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  transition: 0.6s ease-in-out;
+}
+
+@media only screen and (max-width:768px) {
+  .cardPara {
+    font-size: 16px;
+  }
+}
+
+.commonPara {
+  color: var(--textColor);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media only screen and (max-width:768px) {
+  .commonPara {
+    font-size: 16px;
+  }
+}
+
+/* Card Inner desCription End */

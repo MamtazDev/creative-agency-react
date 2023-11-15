@@ -1,0 +1,75 @@
+/* Get started with us Start */
+.stayBtn {
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 13px;
+    background: var(--buttonColor);
+    color: var(--initialColor);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    transition: 0.2s ease-in-out;
+}
+
+.stayBtn:hover {
+    background: var(--primaryColor);
+}
+
+.getStartedInner {
+    padding: 45px 20px;
+    border-radius: 11px;
+    background: var(--otherColor2);
+    transition: 0.2s ease-in-out;
+}
+
+.getStartedInner:hover {
+    background: var(--primaryColor);
+}
+
+.getStartedInner span {
+    color: var(--neutralColor);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    transition: 0.2s ease-in-out;
+}
+
+.getStatedImg {
+    padding: 20px;
+    border-radius: 50%;
+    background: var(--initialColor);
+    transition: 0.2s ease-in-out;
+}
+
+.getStartedInner:hover .getStatedImg {
+    background: var(--secondaryColor);
+}
+
+.getStartedInner:hover.getStartedInner span,
+.getStartedInner:hover.getStartedInner p {
+    color: var(--initialColor);
+}
+
+.getStatedImg img {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+/* Get Started Responsive Start */
+
+@media only screen and (max-width:768px) {
+    .stayBtn {
+        font-size: 12px;
+    }
+
+    .getStartedInner span {
+        font-size: 20px;
+    }
+
+    .getStatedImg {
+        padding: 12px;
+    }
+}
+
+/* Get Started Responsive End */
+/* Get started with us End */
